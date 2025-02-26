@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Beautiful Towns</title>
+</head>
+<body>
+    <h1>Beautiful Towns in Toronto</h1>
+    <ul>
+        <li th:each="town : ${towns}" th:text="${town}"></li>
+    </ul>
+    <a href="/">Back to Menu</a>
+</body>
+</html>

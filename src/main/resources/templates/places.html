@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Interesting Places</title>
+</head>
+<body>
+    <h1>Interesting Places to Visit in Toronto</h1>
+    <ul>
+        <li th:each="place : ${places}" th:text="${place}"></li>
+    </ul>
+    <a href="/">Back to Menu</a>
+</body>
+</html>
